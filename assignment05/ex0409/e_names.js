@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+/** <!DOCTYPE html>
 <html>
 
 <body>
@@ -14,6 +14,7 @@
     <p id="negative"></p>
 
     <script>
+    */
         var names = [];
         var output_names = [];
         var printnames = "";
@@ -39,8 +40,10 @@
             document.getElementById("negative").innerHTML = "There are " + output_names.length + " names ended up with 'y' and 'ie'";
             document.getElementById("print").disabled = true;
         }
+        /*
     </script>
 
 </body>
 
 </html>
+*/
