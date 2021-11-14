@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }   else alert('cant go here')
         }
     }
-})
 })(i)
 
 //check the board for a win or loss
@@ -66,3 +65,4 @@ function checkBoard(){
 
 //add an eventListener to each square that will trigger the checkBoard function on click
 squares.forEach(square => square.addEventListener('click', checkBoard))
+})
