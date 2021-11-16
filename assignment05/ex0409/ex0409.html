@@ -1,15 +1,44 @@
 <!DOCTYPE html>
-<html>
+<!-- e4_9.html - A solution to Exercise 4.9
+     -->
+<html lang = "en">
 <head>
-<meta charset="UTF-8">
+  <title> Exercise 4.9 </title>
+  <meta charset = "utf-8" />
+  <script type = "text/javascript">
+  <!--
+  // Function e_names
+  // Parameter: an array of strings
+  // Returns: the number of given strings that end
+  //          in either "ie" or "y"
 
-<script type="text/javascript"> </script>
+function e_names(names) {
+   var len, index, count = 0; 
+   len = names.length;
 
+  // Loop to use pattern matching to produce the count
+
+     for (index = 0; index < len; index++) {
+        position1 = names[index].search(/ie$/);
+        position2 = names[index].search(/y$/);
+        if (position1 + position2 > -2)
+           count++;
+     }
+     return count;
+  }
+  // -->
+  </script>
 </head>
+
 <body>
-<form name="f1">
-<input type="button" value="Click to add names to the list" onclick="addnames()">
-</form>
-<h1 id="max"></h1>
+<script type = "text/javascript">
+<!--
+// Function e_names tester
+
+var new_names = new Array ("freddie", "bob", "mieke", "yahoo2", "georgey");
+result = e_names(new_names);
+document.write("The number of special names is: " + result + "<br/>");
+// -->
+</script>
 </body>
 </html>
